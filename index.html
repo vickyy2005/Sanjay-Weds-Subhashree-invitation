@@ -1432,6 +1432,136 @@
 
 
 
+        /* =====================================================
+
+           ENGAGEMENT CEREMONY
+
+        ===================================================== */
+
+        .engagement-section {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #fff8e8;
+
+            padding: 70px 20px;
+
+            overflow: hidden;
+
+            margin-bottom: 24px;
+
+        }
+
+
+
+        .engagement-border {
+
+            position: absolute;
+
+            inset: 20px;
+
+            border: 1px solid rgba(243, 213, 161, .45);
+
+            pointer-events: none;
+
+        }
+
+
+
+        .engagement-container {
+
+            position: relative;
+
+            z-index: 5;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            width: 100%;
+
+        }
+
+
+
+        .engagement-card {
+
+            width: 100%;
+
+            max-width: min(500px, 92vw);
+
+            max-height: 88vh;
+
+            object-fit: contain;
+
+            border-radius: 16px;
+
+            box-shadow: 0 15px 35px rgba(70, 49, 17, .18);
+
+            opacity: 0;
+
+            transform: translateY(40px) scale(0.96);
+
+            transition: opacity 1.1s ease, transform 1.2s cubic-bezier(.16, .84, .22, 1);
+
+        }
+
+
+
+        .engagement-card.active {
+
+            opacity: 1;
+
+            transform: translateY(0) scale(1);
+
+        }
+
+
+
+        @media (max-width: 700px) {
+
+            .engagement-section {
+
+                padding: 35px 12px;
+
+                min-height: 85vh;
+
+            }
+
+
+
+            .engagement-border {
+
+                inset: 12px;
+
+            }
+
+
+
+            .engagement-card {
+
+                max-width: min(390px, 94vw);
+
+                max-height: 84vh;
+
+                border-radius: 12px;
+
+            }
+
+        }
+
+
+
 
 
         /* =====================================================
@@ -5312,7 +5442,7 @@
 
             <div class="hero-venue-title">
 
-                AWHO Colony, Banquet Hall, Odisha - 751021
+                Kanjiapada, Narasinghpur, Cuttack (Kataka) - 754037
 
             </div>
 
@@ -5322,7 +5452,9 @@
 
             <div class="hero-location">
 
-                Bhubaneshwar, Odisha
+
+                
+
 
             </div>
 
@@ -5338,9 +5470,25 @@
 
 
 
+    <!-- =====================================================
+
+     ENGAGEMENT CEREMONY
+
+===================================================== -->
 
 
 
+    <section class="engagement-section" id="engagement">
+
+        <div class="engagement-border"></div>
+
+        <div class="engagement-container">
+
+            <img src="engagement.jpg" class="engagement-card" id="engagementCard" alt="Engagement Ceremony - Sealed With A Ring">
+
+        </div>
+
+    </section>
 
 
 
@@ -5674,11 +5822,11 @@
 
             <h2>
 
-                THE SAFFRON ANANDAMVILLAS
+
 
             </h2>
 
-
+            Banquet Hall
 
 
 
@@ -5686,7 +5834,7 @@
 
                 AWHO Colony, Banquet Hall<br>
 
-                    Bhubaneshwar, Odisha
+                Bhubaneshwar, Odisha
 
             </p>
 
@@ -5732,8 +5880,7 @@
 
 
 
-                <a href="https://maps.app.goo.gl/Yyez76xgxfWLBvBn8?g_st=iw"
-                    target="_blank" rel="noopener noreferrer">
+                <a href="https://maps.app.goo.gl/Yyez76xgxfWLBvBn8?g_st=iw" target="_blank" rel="noopener noreferrer">
 
                     📍 Open in Maps
 
@@ -6903,7 +7050,9 @@
 
                     ".rsvp",
 
-                    ".countdown-title"
+                    ".countdown-title",
+
+                    ".engagement-card"
 
                 ].join(",")
 
